@@ -1,0 +1,8 @@
+version: "3.7"
+
+services:
+  api:
+    build: ./
+    container_name: softplan-eperin
+    ports:
+      - "8080:80"

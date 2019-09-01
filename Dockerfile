@@ -4,6 +4,9 @@ WORKDIR /app
 # copy csproj and restore as distinct layers
 COPY *.sln .
 COPY ./src/Softplan.Calc.Api/*.csproj ./src/Softplan.Calc.Api/
+COPY ./src/Softplan.Calc.Domain/*.csproj ./src/Softplan.Calc.Domain/
+COPY ./tests/Softplan.Calc.Domain.Tests/*.csproj ./tests/Softplan.Calc.Domain.Tests/
+COPY ./tests/Softplan.Calc.IntegrationTests/*.csproj ./tests/Softplan.Calc.IntegrationTests/
 RUN dotnet restore
 
 # copy everything else and build app
