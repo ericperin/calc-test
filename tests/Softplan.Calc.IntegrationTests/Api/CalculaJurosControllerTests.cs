@@ -1,8 +1,5 @@
 using System.Net.Http;
 using Xunit;
-using Microsoft.AspNetCore.TestHost;
-using Microsoft.AspNetCore.Hosting;
-using Softplan.Calc.Api;
 using System.Net;
 using System.Threading.Tasks;
 
@@ -10,11 +7,10 @@ namespace Softplan.Calc.IntegrationTests
 {
     public class CalculaJurosControllerTests
     {
-        private readonly HttpClient _client;
+        private readonly ApiTestContext _context;
         public CalculaJurosControllerTests()
         {
-            var server = new TestServer(new WebHostBuilder().UseEnvironment("Development").UseStartup<Startup>());
-            _client = server.CreateClient();
+            _context = new ApiTestContext();
         }
 
         [Theory]
@@ -23,7 +19,7 @@ namespace Softplan.Calc.IntegrationTests
         {
             var request = new HttpRequestMessage(new HttpMethod(method), $"calculajuros?valorinicial={valorInicial}&meses={meses}");
 
-            var response = await _client.SendAsync(request);
+            var response = await _context.Client.SendAsync(request);
 
             response.EnsureSuccessStatusCode();
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
