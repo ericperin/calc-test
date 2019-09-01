@@ -9,7 +9,7 @@ namespace Softplan.Calc.Api.Controllers
         [HttpGet]
         public ActionResult<string> Get()
         {
-            return "https://github.com/ericperin/calc-test";
+            return Ok("https://github.com/ericperin/calc-test");
         }
     }
 }

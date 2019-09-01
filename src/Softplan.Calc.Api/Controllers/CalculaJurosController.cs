@@ -15,7 +15,7 @@ namespace Softplan.Calc.Api.Controllers
             if (valorJuros == null) return BadRequest("Taxa de juros null.");
 
             var juros = new Juros(valorJuros.Value);
-            return juros.Calcula(valorInicial, meses);
+            return Ok(juros.Calcula(valorInicial, meses));
         }
     }
 }

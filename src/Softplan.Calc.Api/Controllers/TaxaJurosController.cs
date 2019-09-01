@@ -9,7 +9,7 @@ namespace Softplan.Calc.Api.Controllers
         [HttpGet]
         public ActionResult<double> Get()
         {
-            return 0.01;
+            return Ok(0.01);
         }
     }
 }

@@ -15,7 +15,7 @@ namespace Softplan.Calc.IntegrationTests
 
 
         [Fact]
-        public async Task Values_GetById_CorrectContentType()
+        public async Task Shoud_return_json_utf8_like_header_contentType()
         {
             var response = await _context.Client.GetAsync("taxajuros");
             response.EnsureSuccessStatusCode();
@@ -25,7 +25,7 @@ namespace Softplan.Calc.IntegrationTests
 
         [Theory]
         [InlineData("GET")]
-        public async Task GetJuros(string method)
+        public async Task Shoud_return_ok(string method)
         {
             var request = new HttpRequestMessage(new HttpMethod(method), "taxajuros");
 
