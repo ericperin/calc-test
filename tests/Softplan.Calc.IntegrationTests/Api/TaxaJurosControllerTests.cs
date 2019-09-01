@@ -13,6 +13,16 @@ namespace Softplan.Calc.IntegrationTests
             _context = new ApiTestContext();
         }
 
+
+        [Fact]
+        public async Task Values_GetById_CorrectContentType()
+        {
+            var response = await _context.Client.GetAsync("taxajuros");
+            response.EnsureSuccessStatusCode();
+
+            Assert.Equal("application/json; charset=utf-8", response.Content.Headers.ContentType.ToString());
+        }
+
         [Theory]
         [InlineData("GET")]
         public async Task GetJuros(string method)

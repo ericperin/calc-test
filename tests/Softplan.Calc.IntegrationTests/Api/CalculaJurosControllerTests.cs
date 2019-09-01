@@ -15,6 +15,9 @@ namespace Softplan.Calc.IntegrationTests
 
         [Theory]
         [InlineData("GET", 100, 5)]
+        [InlineData("GET", 50, 27)]
+        [InlineData("GET", 1978, 3)]
+        [InlineData("GET", 63728123123, 13)]
         public async Task GetJuros(string method, decimal valorInicial, int meses)
         {
             var request = new HttpRequestMessage(new HttpMethod(method), $"calculajuros?valorinicial={valorInicial}&meses={meses}");
