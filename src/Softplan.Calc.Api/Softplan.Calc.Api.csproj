@@ -11,4 +11,8 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Softplan.Calc.Domain\Softplan.Calc.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
