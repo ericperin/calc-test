@@ -11,7 +11,8 @@ namespace Softplan.Calc.Api.Controllers
         public ActionResult<decimal> Get(decimal valorInicial, int meses)
         {
             var taxaJurosController = new TaxaJurosController();
-            var valorJuros = taxaJurosController.Get();            
+            var valorJuros = taxaJurosController.Get();
+            if (valorJuros == null) return BadRequest("Taxa de juros null.");
 
             var juros = new Juros(valorJuros.Value);
             return juros.Calcula(valorInicial, meses);
