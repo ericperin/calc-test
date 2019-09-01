@@ -23,6 +23,9 @@ namespace Softplan.Calc.Api
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
+            // Enforce lowercase routing
+            services.AddRouting(options => options.LowercaseUrls = true);
+
             services.AddSwaggerGen(x =>
             {
                 x.SwaggerDoc("v1", new Info { Title = "Softplan", Version = Env.IsProduction() ? "" : "Dev" });
