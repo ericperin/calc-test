@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Softplan.Calc.Domain\Softplan.Calc.Domain.csproj" />
+    <ProjectReference Include="..\..\src\Softplan.Calc.Domain\Softplan.Calc.Domain.csproj" />
   </ItemGroup>
 
 </Project>

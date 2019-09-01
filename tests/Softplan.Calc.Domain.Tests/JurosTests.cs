@@ -2,7 +2,7 @@ using System;
 using Xunit;
 using Softplan.Calc.Domain.Entities;
 
-namespace Softplan.Calc.Tests
+namespace Softplan.Calc.Domain.Tests
 {
     public class JurosTests
     {

@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Softplan.Calc.Api", "src\So
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Softplan.Calc.Domain", "src\Softplan.Calc.Domain\Softplan.Calc.Domain.csproj", "{0383E11C-9C18-4630-AECF-CC5366A6A09F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Softplan.Calc.Tests", "src\Softplan.Calc.Tests\Softplan.Calc.Tests.csproj", "{1C767B2F-C38C-4EE3-AE05-00508FBCE308}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Softplan.Calc.Tests", "tests\Softplan.Calc.Domain.Tests\Softplan.Calc.Domain.Tests.csproj", "{1C767B2F-C38C-4EE3-AE05-00508FBCE308}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
