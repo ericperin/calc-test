@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Softplan.Calc.Api", "src\So
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Softplan.Calc.Domain", "src\Softplan.Calc.Domain\Softplan.Calc.Domain.csproj", "{0383E11C-9C18-4630-AECF-CC5366A6A09F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Softplan.Calc.Tests", "src\Softplan.Calc.Tests\Softplan.Calc.Tests.csproj", "{1C767B2F-C38C-4EE3-AE05-00508FBCE308}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,9 +48,22 @@ Global
 		{0383E11C-9C18-4630-AECF-CC5366A6A09F}.Release|x64.Build.0 = Release|Any CPU
 		{0383E11C-9C18-4630-AECF-CC5366A6A09F}.Release|x86.ActiveCfg = Release|Any CPU
 		{0383E11C-9C18-4630-AECF-CC5366A6A09F}.Release|x86.Build.0 = Release|Any CPU
+		{1C767B2F-C38C-4EE3-AE05-00508FBCE308}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C767B2F-C38C-4EE3-AE05-00508FBCE308}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C767B2F-C38C-4EE3-AE05-00508FBCE308}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1C767B2F-C38C-4EE3-AE05-00508FBCE308}.Debug|x64.Build.0 = Debug|Any CPU
+		{1C767B2F-C38C-4EE3-AE05-00508FBCE308}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1C767B2F-C38C-4EE3-AE05-00508FBCE308}.Debug|x86.Build.0 = Debug|Any CPU
+		{1C767B2F-C38C-4EE3-AE05-00508FBCE308}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C767B2F-C38C-4EE3-AE05-00508FBCE308}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C767B2F-C38C-4EE3-AE05-00508FBCE308}.Release|x64.ActiveCfg = Release|Any CPU
+		{1C767B2F-C38C-4EE3-AE05-00508FBCE308}.Release|x64.Build.0 = Release|Any CPU
+		{1C767B2F-C38C-4EE3-AE05-00508FBCE308}.Release|x86.ActiveCfg = Release|Any CPU
+		{1C767B2F-C38C-4EE3-AE05-00508FBCE308}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9C8B2997-EEBC-4495-B748-A8BC6801E86B} = {BEFF2E46-9E59-404A-BA35-3FA828FF4830}
 		{0383E11C-9C18-4630-AECF-CC5366A6A09F} = {BEFF2E46-9E59-404A-BA35-3FA828FF4830}
+		{1C767B2F-C38C-4EE3-AE05-00508FBCE308} = {BEFF2E46-9E59-404A-BA35-3FA828FF4830}
 	EndGlobalSection
 EndGlobal
