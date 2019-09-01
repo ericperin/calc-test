@@ -1,5 +1,6 @@
 using System;
 using Xunit;
+using Softplan.Calc.Domain.Entities;
 
 namespace Softplan.Calc.Tests
 {
@@ -8,7 +9,9 @@ namespace Softplan.Calc.Tests
         [Fact]
         public void Should_return_error_when_interest_rate_is_null()
         {
-            Assert.Equal(1, 0);
+            var result = new Juros(0.01);
+            
+            Assert.Equal(Convert.ToDecimal(105.1), result.Calcula(100, 5));
         }
     }
 }
