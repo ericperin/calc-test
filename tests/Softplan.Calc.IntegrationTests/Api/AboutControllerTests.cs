@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 
 namespace Softplan.Calc.IntegrationTests
 {
-    public class HomeControllerTests
+    public class AboutControllerTests
     {
         private readonly ApiTestContext _context;
-        public HomeControllerTests()
+        public AboutControllerTests()
         {
             _context = new ApiTestContext();
         }

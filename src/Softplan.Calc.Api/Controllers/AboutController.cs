@@ -4,7 +4,7 @@ namespace Softplan.Calc.Api.Controllers
 {
     [Route("showmethecode")]
     [ApiController]
-    public class HomeController : ControllerBase
+    public class AboutController : ControllerBase
     {
         [HttpGet]
         public ActionResult<string> Get()
